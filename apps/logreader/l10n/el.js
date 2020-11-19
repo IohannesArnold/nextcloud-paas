@@ -1,0 +1,25 @@
+OC.L10N.register(
+    "logreader",
+    {
+    "Log levels" : "Επίπεδα αρχείου καταγραφής",
+    "Log content" : "Περιεχόμενα αρχείου καταγραφής",
+    "Live update" : "Ενημέρωση σε πραγματικό χρόνο",
+    "Download logs" : "Αρχείο Καταγραφής Λήψεων",
+    "Error parsing log" : "Σφάλμα κατά την ανάλυση του αρχείου καταγραφής",
+    "Copy" : "Αντιγραφή",
+    "Copy raw" : "Αντιγραφή σειράς",
+    "Copy formatted" : "Αντιγραφή μορφοποίησης",
+    "No server logs" : "Δεν υπάρχουν αρχεία καταγραφής εξυπηρετητή",
+    "One or more entries are hidden by the log level filter" : "Μια ή περισσότερες καταχωρήσεις αποκρύφθηκαν από το φίλτρο επιπέδου του αρχείου καταγραφής",
+    "Everything is working fine" : "Όλα λειτουργούν καλά",
+    "Level" : "Επίπεδο",
+    "App" : "Εφαρμογή",
+    "Message" : "Μήνυμα",
+    "Time" : "Ώρα",
+    "Caused by " : "Προκλήθηκε από",
+    "Logging" : "Καταγραφή",
+    "Log Reader" : "Αναγνώστης Καταγραφών",
+    "A log reader for Nextcloud" : "Ένας αναγνώστης αρχείου καταγραφής για το Nextcloud",
+    "Log reader for Nextcloud" : "Αναγνώστης αρχείου καταγραφής για το Nextcloud"
+},
+"nplurals=2; plural=(n != 1);");

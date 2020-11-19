@@ -1,0 +1,9 @@
+{ "translations": {
+    "Text" : "Текст",
+    "Edit" : "Променяне",
+    "Undo" : "Отмяна",
+    "Bold" : "Удебелен",
+    "Italic" : "Курсив",
+    "Retry" : "Опитай отново"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

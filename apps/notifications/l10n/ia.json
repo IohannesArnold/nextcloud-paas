@@ -1,0 +1,8 @@
+{ "translations": {
+    "Notifications" : "Notificationes",
+    "No notifications" : "Nulle notificationes",
+    "Dismiss" : "Dimitter",
+    "seconds ago" : "secundas passate",
+    "in {path}" : "in {path}"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

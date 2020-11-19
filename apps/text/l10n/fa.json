@@ -1,0 +1,14 @@
+{ "translations": {
+    "Text" : "متن",
+    "Edit guest name" : "ویرایش نام مهمان",
+    "Save guest name" : "ذخیره نام مهمان",
+    "Edit" : "ویرایش",
+    "Undo" : "برگرداندن",
+    "Bold" : "درشت",
+    "Italic" : "Italic",
+    "Retry" : "تلاش دوباره",
+    "Add link" : "افزودن لینک",
+    "Show image" : "نمایش تصویر",
+    "Show file" : "نمایش فایل"
+},"pluralForm" :"nplurals=2; plural=(n > 1);"
+}

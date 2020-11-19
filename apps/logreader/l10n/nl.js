@@ -1,0 +1,25 @@
+OC.L10N.register(
+    "logreader",
+    {
+    "Log levels" : "Niveau logboek",
+    "Log content" : "Inhoud logboek",
+    "Live update" : "Live bijgewerkt",
+    "Download logs" : "Logboek downloaden",
+    "Error parsing log" : "Fout parseren logboeken",
+    "Copy" : "Kopiëren",
+    "Copy raw" : "Kopiëren puur",
+    "Copy formatted" : "Kopiëren geformatteerd",
+    "No server logs" : "Geen server logboek",
+    "One or more entries are hidden by the log level filter" : "Een of meer meldingen zijn verborgen door de logfilter",
+    "Everything is working fine" : "Alles werkt prima",
+    "Level" : "Level",
+    "App" : "App",
+    "Message" : "Bericht",
+    "Time" : "Tijd",
+    "Caused by " : "Veroorzaakt door",
+    "Logging" : "Logs",
+    "Log Reader" : "Logboek lezer",
+    "A log reader for Nextcloud" : "Een loglezer voor Nextcloud",
+    "Log reader for Nextcloud" : "Loglezer voor Nextcloud"
+},
+"nplurals=2; plural=(n != 1);");

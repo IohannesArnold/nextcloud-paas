@@ -1,0 +1,26 @@
+{ "translations": {
+    "Photos" : "Fotos",
+    "Your memories under your control" : "Ihre Erinnerungen unter Ihrer Kontrolle",
+    "Your photos" : "Ihre Fotos",
+    "Your videos" : "Ihre Videos",
+    "Favorites" : "Favoriten",
+    "Your folders" : "Ihre Ordner",
+    "Shared with you" : "Mit Ihnen geteilt",
+    "Tagged photos" : "Fotos mit Schlagworten",
+    "Locations" : "Orte",
+    "Settings" : "Einstellungen",
+    "Open the full size \"{name}\" image" : "Bild \"{name}\" in Originalgröße öffnen",
+    "Open the \"{name}\" sub-directory" : "Öffne den Unterordner \"{name}\" ",
+    "Share this folder" : "Diesen Ordner teilen",
+    "Back to {folder}" : "Zurück zu {folder}",
+    "View" : "Ansicht",
+    "Enable squared photos view" : "Quadratische Fotoansicht aktivieren",
+    "This folder does not exists" : "Dieser Ordner existiert nicht",
+    "An error occurred" : "Es ist ein Fehler aufgetreten",
+    "No photos in here" : "Keine Fotos vorhanden",
+    "No tags yet" : "Noch keine Schlagworte vorhanden",
+    "Photos with tags will show up here" : "Fotos mit Schlagworten werden hier angezeigt",
+    "Your albums" : "Ihre Alben",
+    "Shared albums" : "Geteilte Alben"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

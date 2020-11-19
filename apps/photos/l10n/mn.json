@@ -1,0 +1,8 @@
+{ "translations": {
+    "Photos" : "Зурагнууд",
+    "Your photos" : "Таны зурагнууд ",
+    "Favorites" : "Онцолсон",
+    "Shared with you" : "тантай хуваалцсан",
+    "Settings" : "Тохиргоо"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

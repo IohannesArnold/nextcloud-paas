@@ -1,0 +1,25 @@
+OC.L10N.register(
+    "serverinfo",
+    {
+    "Total" : "Totaal",
+    "Current usage" : "Huidige gebruik",
+    "Users" : "Gebruikers",
+    "Groups" : "Groepe",
+    "Links" : "Skakels",
+    "Copy" : "Kopieer",
+    "Copied!" : "Gekopieer!",
+    "Not supported!" : "Word nie ondersteun nie!",
+    "Press ⌘-C to copy." : "Druk ⌘-C om te kopieer.",
+    "Press Ctrl-C to copy." : "Druk Ctrl-C om te kopieer.",
+    "System" : "Stelsel",
+    "Size" : "Grootte",
+    "Files:" : "Lêers",
+    "Active users" : "Aktiewe gebruikers",
+    "PHP" : "PHP",
+    "Version:" : "Weergawe:",
+    "Memory Limit:" : "Geheuelimiet:",
+    "Database" : "Databasis",
+    "Type:" : "Tipe:",
+    "Size:" : "Grootte:"
+},
+"nplurals=2; plural=(n != 1);");

@@ -1,0 +1,4 @@
+applications:
+ - name: Nextcloud
+   random-route: true
+   memory: 128M

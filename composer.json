@@ -1,7 +1,11 @@
 {
   "require": {
     "php": ">=7.4.0",
+    "ext-bcmath": "*",
+    "ext-imagick": "*",
+    "ext-intl": "*",
     "ext-mbstring": "*",
-    "ext-gd": "*"
+    "ext-gd": "*",
+    "ext-gmp": "*"
   }
 }

@@ -5,7 +5,7 @@ if(getenv('SECRET') || getenv('PASSWORD_SALT')) {
     'passwordsalt' => getenv('PASSWORD_SALT'),
     'trusted_domains' =>
     array (
-      0 => 'localhost',
+      0 => '*',
     ),
     'datadirectory' => '/app/data',
     'version' => '20.0.2.2',

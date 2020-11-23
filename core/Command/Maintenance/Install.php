@@ -67,6 +67,7 @@ class Install extends Command {
 			->addOption('database-port', null, InputOption::VALUE_REQUIRED, 'Port the database is listening on')
 			->addOption('database-user', null, InputOption::VALUE_REQUIRED, 'User name to connect to the database')
 			->addOption('database-pass', null, InputOption::VALUE_OPTIONAL, 'Password of the database user', null)
+			->addOption('database-url', null, InputOption::VALUE_OPTIONAL, 'A single URL that replaces all of the above')
 			->addOption('database-table-space', null, InputOption::VALUE_OPTIONAL, 'Table space of the database (oci only)', null)
 			->addOption('admin-user', null, InputOption::VALUE_REQUIRED, 'User name of the admin account', 'admin')
 			->addOption('admin-pass', null, InputOption::VALUE_REQUIRED, 'Password of the admin account')
@@ -119,20 +120,31 @@ class Install extends Command {
 	 * @return array
 	 */
 	protected function validateInput(InputInterface $input, OutputInterface $output, $supportedDatabases) {
-		$db = strtolower($input->getOption('database'));
+		$dbUrl = parse_url($input->getOption('database-url'));
+		if ($dbUrl) {
+			$db = $dbUrl["scheme"];
+			$dbUser = $dbUrl["user"];
+			$dbPass = $dbUrl["pass"];
+			$dbName = ltrim($dbUrl["path"],'/');
+			$dbHost = $dbUrl["host"];
+			$dbPort =  $dbUrl["port"];
+
+			if ($db === 'postgres') { $db = 'pgsql'}
+		} else {
+			$db = strtolower($input->getOption('database'));
+			$dbUser = $input->getOption('database-user');
+			$dbPass = $input->getOption('database-pass');
+			$dbName = $input->getOption('database-name');
+			$dbPort = $input->getOption('database-port');
+		}
 
 		if (!in_array($db, $supportedDatabases)) {
 			throw new InvalidArgumentException("Database <$db> is not supported.");
 		}
-
-		$dbUser = $input->getOption('database-user');
-		$dbPass = $input->getOption('database-pass');
-		$dbName = $input->getOption('database-name');
-		$dbPort = $input->getOption('database-port');
 		if ($db === 'oci') {
 			// an empty hostname needs to be read from the raw parameters
 			$dbHost = $input->getParameterOption('--database-host', '');
-		} else {
+		} elseif (!$dbHost) {
 			$dbHost = $input->getOption('database-host');
 		}
 		if ($dbPort) {

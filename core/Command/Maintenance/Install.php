@@ -120,8 +120,9 @@ class Install extends Command {
 	 * @return array
 	 */
 	protected function validateInput(InputInterface $input, OutputInterface $output, $supportedDatabases) {
-		$dbUrl = parse_url($input->getOption('database-url'));
+		$dbUrl = $input->getOption('database-url');
 		if ($dbUrl) {
+			$dbUrl = parse_url($dbUrl);
 			$db = $dbUrl["scheme"];
 			$dbUser = $dbUrl["user"];
 			$dbPass = $dbUrl["pass"];
@@ -129,7 +130,7 @@ class Install extends Command {
 			$dbHost = $dbUrl["host"];
 			$dbPort =  $dbUrl["port"];
 
-			if ($db === 'postgres') { $db = 'pgsql'}
+			if ($db === 'postgres') { $db = 'pgsql';}
 		} else {
 			$db = strtolower($input->getOption('database'));
 			$dbUser = $input->getOption('database-user');
@@ -144,7 +145,7 @@ class Install extends Command {
 		if ($db === 'oci') {
 			// an empty hostname needs to be read from the raw parameters
 			$dbHost = $input->getParameterOption('--database-host', '');
-		} elseif (!$dbHost) {
+		} elseif (is_null($dbHost)) {
 			$dbHost = $input->getOption('database-host');
 		}
 		if ($dbPort) {
